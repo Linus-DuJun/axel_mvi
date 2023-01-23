@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "org.linus.demo"
-    compileSdk = 33
+    compileSdk = ConfigData.compileSdkVersion
 
     defaultConfig {
         applicationId = "org.linus.demo"
-        minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = ConfigData.minSdkVersion
+        targetSdk = ConfigData.targetSdkVersion
+        versionCode = ConfigData.versionCode
+        versionName = ConfigData.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -47,17 +47,16 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation("androidx.activity:activity-compose:1.6.1")
-    implementation("androidx.compose.ui:ui:1.3.1")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.3.1")
-    implementation("androidx.compose.material3:material3:1.1.0-alpha04")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.3.1")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.3.1")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.3.1")
+    implementation(Deps.coreKtx)
+    implementation(Deps.lifeCycle)
+    implementation(Deps.activityCompose)
+    implementation(Deps.compose)
+    implementation(Deps.composePreview)
+    implementation(Deps.material)
+    testImplementation(TestDeps.junit)
+    androidTestImplementation(TestDeps.androidJUnit)
+    androidTestImplementation(TestDeps.espresso)
+    androidTestImplementation(TestDeps.composeTestJUnit)
+    debugImplementation(DebugDeps.composeUiTooling)
+    debugImplementation(DebugDeps.composeTestManifest)
 }
