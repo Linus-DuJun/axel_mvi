@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "axel_mvi"
-include ':app'
+include(":app")
