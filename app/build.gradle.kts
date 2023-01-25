@@ -53,6 +53,11 @@ dependencies {
     implementation(Deps.compose)
     implementation(Deps.composePreview)
     implementation(Deps.material)
+    implementation(Deps.retrofit)
+    implementation(platform(Deps.okHttpBom))
+    implementation(Deps.okHttp)
+    implementation(Deps.okHttpLogger)
+
     testImplementation(TestDeps.junit)
     androidTestImplementation(TestDeps.androidJUnit)
     androidTestImplementation(TestDeps.espresso)

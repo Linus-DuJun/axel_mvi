@@ -10,6 +10,10 @@ object Deps {
     val compose by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
     val composePreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"}
     val material by lazy { "androidx.compose.material3:material3:${Versions.material}" }
+    val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
+    val okHttpBom by lazy { "com.squareup.okhttp3:okhttp-bom:${Versions.okHttpBom}" }
+    val okHttp by lazy { "com.squareup.okhttp3:okhttp" }
+    val okHttpLogger by lazy { "com.squareup.okhttp3:logging-interceptor" }
 }
 
 object DebugDeps {

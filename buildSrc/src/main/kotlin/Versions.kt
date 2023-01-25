@@ -4,7 +4,9 @@ object Versions {
     const val activityCompose = "1.6.1"
     const val compose = "1.3.1"
     const val material = "1.1.0-alpha04"
-
+    const val retrofit = "2.9.0"
+    const val okHttpBom = "4.10.0"
+    //Test
     const val jUnit = "4.13.2"
     const val androidJUnit = "1.1.5"
     const val espresso = "3.5.1"
